@@ -1,0 +1,10 @@
+h1{
+    color: #ffffff; /* Q1 rgb(255,255,255) in to hex code */
+}
+p{
+    color: #ffff00;  /* Q2  Yellow to Hex code as we know that rgb(255,255,0)  now into hex code */
+}
+h2{
+color: #0000ff /* Q3 Blue to Hex code as we know that rgb(0, 0, 255)  now into hex code */
+}
+    

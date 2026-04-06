@@ -1,0 +1,23 @@
+ /* There are three types of systems are the 
+ 1. Name system simply type name --- RED, BLUE, GREEN etc
+ 2. RGB sytem here we write color with the combination between "O to 255" of RGB colour. color:rgb( 0,255,411)
+ 3. HEX-CODE here we write in the form of Hex - code #00ff00  where  0--> 00 & 255--> ff */
+
+ h1{
+            color: rgb(255, 0, 0); /* here we can also use this systems for red color: red or color:#ff0000 */
+        }
+        h2{
+            color: rgb(0, 0, 255); /* color:blue or color:#0000ff */
+        }
+        h3{
+            color: rgb(0, 255, 0); /* color:green or color:#00ff00 */
+        }
+        h4{
+            color: rgb(255, 255, 255); background-color: rgb(0, 0, 0); /* background-color:black or background-color:#000000 */
+        }
+        H5{
+            color: rgb(255, 255, 0); /* color:yellow or color:#ffff00 */
+        }
+        h6{
+            color: rgb(255, 255, 255); /* color:White or color:#ffffff */ background-color: rgb(0, 0, 0); /* background-color:black or background-color:#000000 */
+        }

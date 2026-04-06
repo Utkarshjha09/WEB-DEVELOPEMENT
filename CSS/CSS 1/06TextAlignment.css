@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+}
+h2{
+    text-align: right;
+}
+
+p{
+    text-align: justify;
+
+}
+/* Here we can us it to align the text using this property
+p{
+    text-align: start;     start act as left alignment 
+}
+p{
+    text-align: end; where as end acts as right alignment
+}
+    */
+/* Hum isko use karte hai kyuki bahut saare language jaise ki arabic jisko hum right to left likte hai is case mai 
+but default toh left to right likhte hai  
+So we right ke liye end aur left ke liye start use karenge. */
