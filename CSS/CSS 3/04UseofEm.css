@@ -1,0 +1,28 @@
+#outer{
+    height: 400px;
+    width: 400px;
+    background-color: pink;
+    border: 2px solid black;
+    font-size: 10px;
+
+}
+
+#inner{
+    height: 100px;
+    width: 100px;
+    background-color: cornflowerblue;
+    font-size: 3em;  /* 3em matlab outer jo parent hai uske font size ka 3 times = 30px yeh tarika hai related way mai likhne ka */
+    padding:1em; /* padding 1 em matalb font size ka 1 times jo ki 30px hoga consecutively use karne se woh last one se relate karke use hota hai */
+}
+
+button{
+    font-size: 50px;
+    border-radius: 15px;
+    border: 5px solid green;
+    padding-left: 1em; /* 1 times of the font size related to that */
+    padding-right: 1em; /* 1 times of the font size related to that */
+
+}
+
+
+

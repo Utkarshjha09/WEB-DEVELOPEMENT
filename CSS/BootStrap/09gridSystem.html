@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" >
+
+    <title>Grid-System</title>
+</head>
+<body>
+    <p>Grid system mai 12-column mai divide hota hai If we have not told just divide it into column it get equally divided but agar humne btaa diya ki  column A -5 column ka jagah le 
+        column B -5 ka jagah le at last column C-2 ka toh issi ratio mai divide hogaa. <br><b>Note** -:</b> divide total no of 12-column mai hie hogaa. </p>
+        <p> And hum isko <b>responsive bhi bna skte hai hai by using Grid-option</b> for different <b>Screen-size</b></p>
+    <div class="container">
+        <div class="row">
+            <div class="col bg-danger">One</div>
+            <div class="col bg-success">Two</div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col bg-success">Three</div>
+            <div class="col bg-danger">Four</div>
+            <div class="col bg-success">Five</div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-3 bg-success">Three</div> <!-- Yeh 12 mai se 3 column ka jagah legaa -->
+            <div class="col-2 bg-danger">Four</div> <!-- Yeh 12 mai se 2 ka jagah legaa -->
+            <div class="col-5 bg-success">Five</div> <!-- yeh 12 mai se 5 ka jagah legaa and remaining 2 jagah empty reh jayegaa  --> 
+        </div>
+    </div>
+</body>
+</html>

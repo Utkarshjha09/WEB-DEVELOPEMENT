@@ -1,0 +1,72 @@
+h1{
+    text-align: center;
+}
+
+#Colour1{
+   background-color: #9400d3;
+}
+#Colour2{
+    background-color: #4b0082;
+}
+#Colour3{
+    background-color: #0000ff;
+}
+#Colour4{
+    background-color: #00ff00;
+}
+#Colour5{
+    background-color: #ffff00;
+}
+#Colour6{
+    background-color: #ff7f00;
+}
+#Colour7{
+    background-color: #ff0000;
+}
+
+#container1 div,#container2 div{ /* Container id ke aandar ka div */
+    height: 100px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+
+/* Ismai flex grow width ghategi as main axis is left to right */
+#container1{    
+    height: 600px;
+    width: 60%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* this manage along the main axis */
+    align-content: flex-start;
+}
+
+/* Ismai flex-grow height baadhegi as main axis is top to bottom */
+#container2{    
+    height: 600px;
+    width: 60%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column; /*column/row */
+    justify-content: flex-start; /* this manage along the main axis */
+    align-content: flex-start;
+}
+
+
+#Colour6{ 
+    /* align-self: flex-end; */
+    flex-shrink: 1;
+}
+#Colour3{
+    flex-shrink: 2;
+}
+
+/* ab yaha khali space baach nhi rhi ho therefore that will be reduced with this but when flex direction is column height ghategi kyuki main axis top to bottom hoga
+but when the flex-direction is row then the width will be reduce kyuki main axis is now top to bottom.
+/* But we can also limit the max as well as min width matlab isse kaam width/height naa mille aur isse jaada width/height na milee. */

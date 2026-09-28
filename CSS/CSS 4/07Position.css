@@ -1,0 +1,41 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border: 3px solid black;
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+#Static{   /* Humne yaha position 'static' kar di hai iss div ki,  toh ab position fix ho gayi hai kitna v move karna chaaho no change */
+    background-color: yellow;
+    position: static;
+    top: 100px; /* trying to shift from Top  and left */
+    left: 100px;
+}
+
+#Relative{
+    background-color: yellow;
+    position: relative; /* yaha Position relative kar di matlab apne relative(initial) position se top 100px shift and left 100px shift */
+    top: 100px;
+    left: 100px;
+}
+
+#Absolute{
+    background-color: yellow;
+    position: absolute; /* Yaha Position absolute define kar di hai matlab absolute ke case mai block ke liye koi v space create nhi karega toh jo iska parent jaise yaha section hai 
+    usko v koi space nhi hai toh page ke left-top se 100px top and left shift hoga aur position par block jayegaa */
+    top: 100px;
+    left: 100px;
+}
+
+#Fixed{
+    background-color: yellow; /* yeh v same positions as a 'absolute' jaisa hie letaa hai but yeh page pe fix ho jata hai scroll karnepe v fix rehta hai */
+    position: fixed;
+    top: 100px;
+    left: 100px;   
+}
+
+/******************************************************* SHADOW POINT *********************************************************************/
+/* in case agar kisi web page pe hum chaahate ki scroll kar uske baad v nav bar, logo , anything  fixed rhe dikhte rhe uss case mai iisse use kar sakte hai */

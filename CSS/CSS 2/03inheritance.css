@@ -1,0 +1,17 @@
+div{
+    background-color: yellow; /* humne yaha 'div' pe lagaya toh same property inherit ho gya 'h1' & 'h2' pe v kyuki usne inherit kar liya as div is parent it contains both headings */ 
+}
+
+/* But yeh inheritance button, input , etc pe nhi lagta hai toh humko redefine karna hota inherit karwane ke liye */
+/* property like height, width etc cannot be inheritable we have to redefine it */
+
+button{
+    background-color: inherit;
+}
+input{
+    background-color: inherit;
+}
+
+label{
+    color: red;
+}

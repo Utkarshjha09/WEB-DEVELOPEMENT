@@ -1,0 +1,16 @@
+/****************** Question 3 ********************************/
+.loader{
+    height: 120px;  /** ek div liya square form mai equal height and width and then hum usko border diye fir top border ko colour de diye and then border radius 50% de ke circle mai change kar diyee so we get our loader */
+    width: 120px;
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid goldenrod;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;  /* animation function */
+}
+@keyframes spin{ /* yaha humne spin animation banaya hai */
+    from{ transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

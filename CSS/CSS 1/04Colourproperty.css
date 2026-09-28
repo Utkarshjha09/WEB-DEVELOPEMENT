@@ -1,0 +1,17 @@
+h1{
+    color: red;
+} /* Here we set the color of h1 also background color*/
+h2{ /* Here we set the color of h2 also background color*/
+    color: Blue; background-color: rgb(154, 90, 90);
+
+}
+p{ color: red; background-color: rgb(236, 221, 163); /* Here we set the color of p  & also background color */
+
+}
+
+button{ /* Here we set the color of button also background color*/
+    color :gold; background-color: black;
+}
+
+/* we can also use "background : black;"" instead of "background-color: black;" because this "background" keyword is used for various like setting ismage as background etc  
+but "background-color" is used for only setting the background color */

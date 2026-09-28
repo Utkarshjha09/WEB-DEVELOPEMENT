@@ -1,0 +1,25 @@
+#Outer{ /* used id as we have to apply this property only on the outer  div */
+     height: 200px;
+     width: 70px;
+     border: 2px solid black;
+}
+
+.Inner{ /* uses class we have to apply this common property to the innner div's */
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+#Inner1{ /* uses 3 different id as we have to apply unique 3 diffferent property on the individual div's */
+    background-color: red;
+}
+
+#Inner2{
+    background-color: yellow;
+}
+
+#Inner3{
+    background-color: green;
+}

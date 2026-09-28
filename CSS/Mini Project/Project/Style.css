@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+.main_box{
+    background-image: url(photo.jpg);
+    height: 100vh; /* using this taki photo puree page pe aaye */
+    background-size: cover;
+}
+
+.btn_one{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;/* jis line mai yeh hoga uski height */
+}
+.sidebar_menu{
+    position: fixed;
+    left: -300px;
+    height: 100vh; /* 100% page ka legaa inspect it */
+    width: 300px;
+    background-color: rgb(255, 255, 255, 0.1);
+    box-shadow: 0px 2px 6px rgb(255, 255, 255, 0.5);
+    transition: all 0.3s linear;
+}
+
+.sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 0 4px rgb(255, 255, 255, 0.5);
+    height: 60px;
+}
+
+.sidebar_menu .logo a{
+    position: absolute;
+    left: 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.sidebar_menu .btn_two{
+    color: grey;
+    font-size: 25px;
+    position:absolute;
+    left: 250px;
+    line-height: 60px;
+    /* opacity: 0; */
+    transition: all 0.3s linear;
+    cursor: pointer; /* iska use karte hai ki agar koi cursor leke jaye toh uska shape kaisa hoga */
+}
+
+.sidebar_menu .menu{
+    position: absolute;
+    width: 100%;
+    top: 88px;
+}
+
+.sidebar_menu .menu li{
+    margin-top: 6px;
+    padding: 14px 20px;
+}
+
+.sidebar_menu .menu i{
+    padding-right: 8px;
+}
+
+.sidebar_menu .menu i,a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.sidebar_menu .social_media{
+    color: white;
+    opacity: 0.5;
+    position: absolute;
+    left: 25%;
+    bottom: 50px;
+}
+
+.sidebar_menu .social_media i{
+    color: white;
+    padding-right: 8px;
+}
+
+/* disabling checkbox */
+#check{
+    display: none;
+}
+
+/***** Adding hover effect ******/
+
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 6px rgb(255, 255, 255, 0.5) ;
+}
+
+.btn_one:hover{
+    font-size: 40px;
+}
+.btn_two i:hover{
+    font-size: 30px ;
+}
+.sidebar_menu .social_media i:hover{
+   opacity: 1;
+   scale: (1.1);
+}
+
+/**********  Using checkbox logic by using sibling ****************/
+
+#check:checked ~ .sidebar_menu{ /* ~ iss symbol ka matlab sibling hai iss relation ke liye use karte hai isko jaise yaha checkbox ke turant baad same level pe btn_one & sidebar_menu hai toh yeh iska sibling hogaa */ 
+    left:0;
+}
+
+#check:checked ~ .btn_one i{ /* ab yaha sibling btn_one hai na ki "i" so it will not directly applied on that */
+        opacity: 0;
+}
+
+#check:checked ~ .sidebar_menu .btn_two i{
+    opacity: 1;
+}

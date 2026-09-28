@@ -1,0 +1,79 @@
+/**********************************************    FLEX-WRAP ***************************************************/
+/* Wrap matlab agar as flex andar ke elements ko redistribute karke equal space deta hai agar andar ke element bada hua to usko adjust karke choota kar 
+deta hai and then usko arrange karta hai . Wrap matlab Next line mae apna original size mae se agar line 1 mae space nhi baachi toh next line mae " */
+
+h1{
+    text-align: center;
+}
+
+#Colour1{
+   background-color: #9400d3;
+}
+#Colour2{
+    background-color: #4b0082;
+}
+#Colour3{
+    background-color: #0000ff;
+}
+#Colour4{
+    background-color: #00ff00;
+}
+#Colour5{
+    background-color: #ffff00;
+}
+#Colour6{
+    background-color: #ff7f00;
+}
+#Colour7{
+    background-color: #ff0000;
+}
+
+#container1 div,#container2 div, #container3 div{ /* Container id ke aandar ka div */
+    height: 100px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+
+/*************************************************      NO WRAP *****************************************/
+
+#container1{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row; /*  same apply for different combination row-reverse/column-reverse/column */
+    justify-content: space-evenly; /* same apply for differnet combination space-between/space-around " */
+    flex-wrap: nowrap; /*  no change  */
+}
+
+/*************************************************    WRAP       *****************************************/
+
+#container2{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* bahar ki div ki width 300px and andar ke div ki width 1000px and andar wale ka each 300px hai toh both divide karne pe 3 aayega means ek row mai 3 ayega aur next line mai ho jayega */
+}
+
+/************************************************ WRAP-REVERSE ***********************************************/
+#container3{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse; /* cross axis ke reverse direction mai order hogaa  */
+}

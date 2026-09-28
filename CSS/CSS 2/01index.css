@@ -1,0 +1,147 @@
+*{  /* UNIVERSAL SELECTOR */
+    font-family: 'Courier New';
+}
+ /* yaha humne ek baar ma pure page pe apply kar diya yeh font family using universal selector */
+
+h1,h3{
+    color: #b92b27;  /* ELEMENT SELECTOR */
+}
+/* agar koi property ko doa alag jagah lagani hai toh " , " deke likh sakte hai */
+
+#login{   /* ID SELECTOR */
+    background-color: white;
+  /* Yaha humne button id de rakhi hai usually hum ussike  name se banate hai aur yeh unique hota hai*/
+}
+#signup{
+    background-color: #b92b27;
+    color: white
+}
+
+.abc{
+ background-color: green;
+ color: white;
+}
+
+/* Desendent Selector */
+/* p a{                  paragraph ke andar jitne v anchor tag hai unpe yeh apply hoga 
+    background-color: purple;
+    background-color: yellow;
+} */
+
+.post a{ /* paragraph jiska class="post" hai uske jitne v anchor tag hai unpe yeh apply hoga toh Portfolio pe apply nhi hoga  */
+    background-color: purple;
+    background-color: yellow;
+}
+
+nav ul li a{  /* aise v colour de sakte hai nav ke andar unordered list ke andar list ke andar anchor tab */
+    color: hotpink;
+}
+
+/* Adjacent Sibling Selector */ 
+/* yaha hum isse use karte hai taaki humm turant aane wale par apply kar sake koi v property jaise maan lo 
+    <p>   </p>
+    <h3>   </h3>
+    aisaa hai kuch paragarph ke baad heading tag aata hai toh hum yaha direct apply kar denge */
+p + h3 {
+    text-decoration: underline;
+}
+
+.abc + button{
+        background-color: cornflowerblue;
+}
+
+/* Child Combination Selecter*/
+/* Here koi v property lagaye to uskee next tak hie lagega jo ki uska child hogaa
+isse represent aisaa karengee div > input yaha div parent hai 
+Yeh sirf Ek level tak hie include karta hai */
+
+div>input {
+ color: darksalmon;  /* iska matlab agar hum kisi v box mai input likhte hai aur uspe property chahte hai toh yeh use kar sakte hai */
+}  
+
+/* Attribute Selector */
+
+input[type="Text"]{  /* iska matlab hai ki hum agar input mai text denge toh red colour hoga text ka */
+    color: red;
+}
+input[type="Password"]{  /* iska matlab hai ki hum agar input mai password denge toh blue colour hoga password ka */
+color: blue;
+}
+input[type]{
+    color: green; /* iska matlab yeh hai ki kuch v likhe toh uska color green hoga */
+}/* yaha last mai humne green kar diya toh ab green hie hogaa upar ki property pe overwrite ho jayegi due to cascading as both have same selector specificity*/
+
+
+/* Practice Question Q2 */ 
+#MyId p { /* By Using Decendent Selector */
+    color: darkgreen;
+
+}
+
+/* div[id="MyId"]{  /* By Using Attribute Selector 
+    color: darkgreen;
+} */
+
+
+/*********** Pseudo Class *************/ 
+/* here it is of different types hover , active , checked, nth-of-type */
+
+button:hover{ /* hover ka matlab  jab cursor leke jayenge jab upar se cursor move karenge toh,property change ho jayegi */
+    background-color: black;
+    color: white;
+}
+
+h3:hover{
+    text-decoration: none;
+}
+
+/*Active*/
+
+button:active{ /* jaise hie click karenge button pe toh button ka bg-color as well as text inside button ka color change ho jayegaa */
+background-color: pink;
+color: black;
+}
+
+p:active{ /* agar click kar diye paragarph pe toh yeh property apply hogi */
+    color: green;
+    font-weight: bold;
+}
+
+/* checked */
+ 
+input[type="radio"]:checked + label{  /* input ke andar checked hai toh level pe yeh property apply hogi */
+    color: #b92b27;
+    font: bold;
+}
+
+/* nth of type */
+div:nth-of-type(2n){ /* div ke andar 2n ke pattern mai property apply hogi */
+    background-color: blanchedalmond;
+}
+
+
+/*********** Psuedo Element ********/
+/* three types  firstline,firstletter,selection */
+/* agar hum chahte hai ki first letter pe, first line pe ya phir jis part ko v select kare uspe  koi property lagana 
+ toh hum iska use karte hai */
+ 
+ /* First- Letter*/
+h1::first-letter{
+    color: black;
+    font-weight: bolder;
+}
+ /* First Line*/
+p::first-line{
+    color: magenta;
+}
+/* Selection */ 
+
+.post, p::selection{  /* paragraph ka ya phir post a koi v part select karoge toh bg-colour yellow ho jayegaa */
+ background-color: rgb(255, 213, 0);
+}
+
+h3{
+    background-color: red;
+    color: black;
+}
+ /*  yaha humne index2.css apply kiya hai ab jo h3 kaa background colour uske according apply hogaa */

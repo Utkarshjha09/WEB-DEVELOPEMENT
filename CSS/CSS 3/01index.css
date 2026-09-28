@@ -1,0 +1,50 @@
+div{
+    height: 200px; /* yaha humne change kardi height from the default as well as width */
+    width: 500px;
+    background-color: pink;
+
+    /***********************************       BORDER         ********************************************/
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: black; */
+    /* We can use this in single line also */
+    border: 5px solid black;
+    border-top-color: blue;
+    border-top-style: dashed;
+    border-radius: 10px;
+    /* we can also apply border radius to only top right corner */
+    /* border-top-right-radius: 50px; */
+    /**************************************    PADDING         *******************************************/
+    padding-top: 10px; /* it use to manage the space from left, right, top,bottom between content and the div/border/element  */
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin: 20px 30px 20px 50px;
+
+}
+ h1{
+    /* border-width: 2px;                                we can also change/apply/control each side of the border */  /*
+    border-style: dotted;                                By Using -: border-left
+    border-color: purple; */                              /*         border-right   */
+    border: 2px dotted purple;      
+    margin: 0px;                    /*                               border-top     */
+ }                                                        /*         border-bottom  */
+
+button{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: yellow;
+    /* padding: 25px;                               Method-1 For all Sides */     
+    /* padding: 0px 25px;                           Method-2 For Top & Bottom | Left & Right */
+    /* padding: 0px 20px 0px;                       Method-3 For Top | Left & Right | Bottom */
+    padding: 0px 20px 0px 20px;                  /* Method-4 (Clockwise) For the Top | Right | Bottom | Left */
+}
+
+/*****************************************         MARGIN        ****************************************/
+/* It use to manage space between element like 2 div's also hum keh keh sakte hai yeh border aur page ke beech ki space ko control karta hai while padding 
+ content and border ke beeech ki space ko control karta hai 
+ Iske v same 4 tarike hai likhne ke as padding -:
+    /* margin: 25px;                               Method-1 For all Sides */     
+    /* margin: 0px 25px;                           Method-2 For Top & Bottom | Left & Right */
+    /* margin: 0px 20px 0px;                       Method-3 For Top | Left & Right | Bottom */
+    /* margin: 0px 20px 0px 20px;                  Method-4 (Clockwise) For the Top | Right | Bottom | Left */

@@ -1,0 +1,130 @@
+h1{
+    text-align: center;
+}
+
+#Colour1{
+   background-color: #9400d3;
+}
+#Colour2{
+    background-color: #4b0082;
+}
+#Colour3{
+    background-color: #0000ff;
+}
+#Colour4{
+    background-color: #00ff00;
+}
+#Colour5{
+    background-color: #ffff00;
+}
+#Colour6{
+    background-color: #ff7f00;
+}
+#Colour7{
+    background-color: #ff0000;
+}
+
+#container1 div,#container2 div, #container3 div, #container4 div, #container5 div, #container6 div, #container7 div{ /* Container id ke aandar ka div */
+    height: 100px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+/***********************************************************   ALIGN ITEMS  ************************************************************/
+/* iska kaam same justify-content jaisaa hai, justify-content apply on the main axis it distribute space between and around the content item along the main axis while Align items distributes along the cross axis */
+
+#container1{    
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* this manage along the main axis */
+    flex-wrap: wrap;
+    align-content: flex-start;/* while the manages along the cross axis */
+}
+/* yaha row hai flex box direction that means it is main axis so cross axis is top to bottom hogaa therefore align-content: flex-start hai means  content start pe hoga jo ki "top" hai */
+
+#container2{
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    flex-wrap: wrap;
+    align-content: flex-end; 
+}
+/* yaha column hai flex box direction that means it is main axis so cross axis is left to right hogaa therefor align-content: flex-end hai means content end pe hoga jo ki "right" hai*/
+
+#container3{
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    flex-wrap: wrap;
+    align-content: center;
+}
+/* yaha row hai flex box direction that means it is main axis so cross axis is top to bottom hogaa therefore align-content: center hai means content center pe hoga */
+
+#container4{
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    flex-wrap: wrap;
+    align-content: flex-start; 
+}
+/* yaha column hai flex box direction that means it is main axis so cross axis is left to right hogaa therefore align-content: flex-start hai means content start pe hoga jo ki "left" hai*/
+
+#container5{
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+    flex-wrap: wrap;
+    align-content: space-between;  /* space-between/space-around/space-evenly sara space items ke beech mae equally distribute hogaa cross axis ke along*/
+}
+
+#container6{
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    flex-wrap: wrap;
+    align-content: space-between; /* space-between/space-around/space-evenly  sara space items ke beech mae equally distribute hogaa cross axis ke along*/
+}
+
+#container7{
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row; /* column */
+    justify-content: flex-end; 
+    flex-wrap: wrap;
+    align-content: baseline; /* jo v inner content hoga div(element) ke andar ek line/level mai aa jayegaa cross axis ke along */
+}

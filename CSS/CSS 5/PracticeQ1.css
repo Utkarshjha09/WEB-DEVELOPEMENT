@@ -1,0 +1,47 @@
+#alphabet{ /* Outer Div */
+    height: 400px;
+    width: 400px;
+    border: 2px solid teal;
+    border-radius: 15px; /*border radius at 4-corner */
+    display: flex; /* use this taaki content is div ke andar hie aana chaiye */
+    flex-direction: row; /* Main axis row ho order left to right ho */
+    flex-wrap: wrap; /* sara ek row mai naa ho issiliye isse next line mai chala jayegaa */
+    justify-content: space-evenly; /* main axis ke along space between item manage ho jaye (left to right) */
+    align-content: space-around; /* cross axis ke along space between item manage ho jaye (top to bottom) */
+}
+
+
+#alphabet div{ /* bahar ke div ke andar ka div */
+    height: 100px;
+    width: 100px;
+    color: black;
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+/* Question 2 */
+
+#navbar{
+    width: 900px;
+    height: 50px;
+    background-color: pink;
+    display: flex; /* flex ki property use karne ke liye */
+    flex-direction: row;    /* flex ka direction row set kiye jo ki main axis*/
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    border: 2px solid teal;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#navbar div{
+    width: 80px;
+    height: 50px;
+    font-size: 24px;
+    margin-left: 5px;
+    line-height: 50px
+}

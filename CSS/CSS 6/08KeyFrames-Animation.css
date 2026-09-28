@@ -1,0 +1,41 @@
+.box{
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    animation-name: widthAnimation; /*replace by ColorAnimation for this */
+    animation-duration: 3s; /* already learn this in CSS 4 in Transition */
+    animation-timing-function: ease-in; /*  same */
+    animation-delay: 0;
+    animation-iteration-count: 7; /*it can be "infinite" */
+    animation-direction: normal; /*there are more option reverse, alternate, alternate-reverse */
+}
+/* Animation ShortHand -: 
+animation: ColorAnimation 3s ease-in 0s infinite alternate; 
+ basically define all in single one */
+
+/* Animation template create kiya hai and then upar hum isko use kiye hai */
+@keyframes fontAnimation{
+    from{font-size: 20px;}
+    to{font-size: 40px;}
+}
+
+@keyframes ColorAnimation{
+
+    from{background-color: green;}
+    to{background-color: blue;}
+}
+
+@keyframes widthAnimation{
+    0%{width: 10px;
+    background-color: green;
+    }
+    55%{width: 200px; /* matlab jab 55% ho animation ka timing toh uska color red hojayee and width 200px ho jayee */
+        background-color: red;
+    }
+    100%{ width: 400px;
+        background-color: blue;
+        border-radius: 15px;
+    }
+}
+
+/* "from" matlab 0% jaha se animation start ho rahi hai and "to" matlab 100% so we can customize it for n% where n is 0,1,2,3,4,5....99,100. */

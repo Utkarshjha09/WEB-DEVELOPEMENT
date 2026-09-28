@@ -1,0 +1,54 @@
+/****************************************          Grid-Property       *******************************************/
+
+#container{
+    width: 600px;
+    height: 300px;
+    background-color: yellow;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: 1fr 1fr 1fr; 
+        /* row-gap: 10px;
+        column-gap: 10px; */
+    grid-gap: 10px 10px; /* we can also write in this form first is for row-gap, column-gap */
+/****************************************          Grid-Property       *******************************************/
+ /* justify - horizontally space manage karna basically andar ke item ko, in other words item  ko left-right 
+    align - Vertically space manage karna basically andar ke item ko, in other words item ko top-bottom
+    items - used for full container that contains item
+    self - used for individual items  */
+
+    justify-items: end; /* justify ka use karte hai puree container pe apply karne ke liye andar ke saree 'div' pe apply hoga 
+                            iska use horizontally place karne ke liye use karte hai */
+    align-items: start; /* align ka use karte hai puree container pe apply karne ke liye andar ke saare 'div' pe apply hogaa iska use vertically place 
+                            karne ke liye use karte hai */
+    
+}
+
+.item{ /* this is a common class for all the element inside the container  */
+    height: 50px;
+    width: 100px;
+    background-color: greenyellow;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+}
+.one{ /* this is a particular individual class for first div */
+    /* self is used to apply on a individual item */
+    justify-self: center; /* individual div 'one" ke horizontally place ke liye and vertically place ke liyee */
+    align-self: end;
+}
+
+/*********************************** Place-items/ Place-self **********************************************/
+#container2
+    {
+            width: 600px;
+    height: 300px;
+    background-color: yellow;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 10px 10px;
+    place-items: start; /* it will set both justify and align items at start , it will apply on the all the items inside the outer div */
+    }
+
+.three{
+    place-self: end; /* it will  set both justify and align self at end, it will apply only on individual item having class = "item three" */
+}

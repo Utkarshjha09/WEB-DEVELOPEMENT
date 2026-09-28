@@ -1,0 +1,44 @@
+Here is the summary of css3
+border-width: 5px;
+border-style: solid;
+border-color: black;
+We can use this in single line also  " border: 5px solid black; "
+we can also change/apply/control each side of the border By Using -: border-left-(style/color/width)
+                                                                     border-right
+                                                                     border-top
+                                                                     border-bottom
+we can also apply border radius to only top right,left,top,bottom corner "border-top-right-radius: 50px;"
+
+PADDING
+It use to manage the space from left, right, top,bottom between content and the div/border/element
+It can be applicable in 4 different ways-:
+    padding: 25px;                               Method-1 For all Sides   
+    padding: 0px 25px;                           Method-2 For Top & Bottom | Left & Right
+    padding: 0px 20px 0px;                       Method-3 For Top | Left & Right | Bottom
+    padding: 0px 20px 0px 20px;                  Method-4 (Clockwise) For the Top | Right | Bottom | Left
+
+MARGIN
+It use to manage space between element like 2 div's also hum keh keh sakte hai yeh border aur page ke beech ki space ko control karta hai while padding 
+content(inside the div) and border ke beeech ki space ko control karta hai.
+Iske v same 4 tarike hai likhne ke as padding
+
+DISPLAY
+Use to change inline or block element in to block and inline as per our need respectively.
+By default heading tags are block element and Span are inline element by using this display property we change it
+Agar koi block element hai aur humne uspe property apply ki aur then usko change kar diya inline element mai toh uspe humko ek problem dikhega woh change nhi hoga then we need
+convert it into (Display: inline-block ;) inline-block.
+INLINE BLOCK - means acts as inline but property are applied as block
+If we want to remove / gayab karna any of div, element then (display: None;)
+
+PERCENTAGE 
+Inner will take the margin X% of the parent div that is outer div 
+So the Use of PERCENTAGE is to take any element property in respect of the parent element of that property
+
+Em 
+iska use kisi parent element like div,button ke font-size ke respect mai inner element (child element) ke font size ko likh te hai aur 
+Ex- 2em means 2 times of the font size of the outer(parent) element 
+aur if we are using 2 times this em for same element then first will related to the parent but the second will related to that first element.
+
+Rem
+Iska use humm "em" ek drawback ko shi karne ke liye hai,  like em consecutively use karo same element ke liye to woh double hote jayega so it is 
+used only to make the same font size inside the  a parent

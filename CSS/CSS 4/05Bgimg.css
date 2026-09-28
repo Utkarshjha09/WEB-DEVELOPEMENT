@@ -1,0 +1,11 @@
+div{
+    height: 200px;
+    width: 400px;
+    background-color: #7aa874;
+    margin: 10px auto;
+    background-image: url("bgimage.jpg");
+    background-size: cover;
+    /* size have three options 'contain' - means puri image repeat hoke background cover karegi
+       'cover' ke case mai crop hoke laag jayegi, 'auto' case mae zoom as well as blur ho jayegaa
+       cover commonly use hogaa */
+}

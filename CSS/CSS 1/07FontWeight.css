@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+    font-weight:normal ;    /* 400 normal ko hum 400 likh ke v represent kar skte hai
+    The range is lies between 100 - 900     */
+}
+h2{
+    text-align: right;
+    font-weight: bold;   /* 700 bold ko hum 700 v likh sakte hai */
+}
+p{
+    text-align: justify;
+    font-weight: 100;   /* we can use values from 100-900 as per our requirement */
+}
+
+/* font-weight: bolder  (is ka iska use hum tab karte hai jab hum kuch bolder chaiye jo ki bold ho "900" se v jada)
+   font-weight: lighter  (iska use hum taab karte hai jab hmo "100"se v lighter weight chaiye ho) */ 

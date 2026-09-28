@@ -1,0 +1,15 @@
+/**************************************** COLOR-OPACITY ****************************************/
+
+div{
+    height: 300px;
+    width: 300px;
+    background-color: rgba(red, 0, 0, 0.9); /* Here a ----> alpha that tell use the opacity of the colour that is use to set the opacity of the color. 
+                                                does not depend on any system can be used in "hex" system also . */
+}
+
+/***************************************** OPACITY PROPERTY **************************************/
+#opacity{
+    background-color: #ffa511;
+    opacity : 0.5;  /* as property define karne pe yeh div ke andar jitne kuch aayega sab pe opacity lagaa degaa but as colour define karne par baas colour mai opacity ayeagaa */
+}
+

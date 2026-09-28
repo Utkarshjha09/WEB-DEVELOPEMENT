@@ -1,0 +1,11 @@
+/********************************  BOX - SHADOW **********************************/
+/* It gives Shadow effect around the box */
+
+div{
+    height: 50px;
+    width: 200px;
+    margin: 10px auto;
+    background-color: #7aa874;
+    text-align: center;
+    box-shadow: 2px 2px 8px black;  /* 2px --- along 'X' axis 2px --- along 'Y' axis 8px --> blur Radius */
+}

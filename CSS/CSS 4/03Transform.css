@@ -1,0 +1,46 @@
+section{
+    margin-top: 100px;
+}
+
+div{
+    background-color: #7aa874;
+    border: 2px solid black;
+    height: 50px;
+    width: 200px;
+    margin: 10px auto;
+}
+div:nth-of-type(2n){
+    background-color: #f7db6a;
+}
+
+div:nth-of-type(3n){
+    background-color: #ebb02d;
+}
+
+/************************************** TRANSFORM : ROTATE ***************************/
+
+#one{
+    transform: rotate(45deg);
+}
+
+/************************************** TRANSFORM : SCALE ****************************/
+/* NOTE : All the Transform properties are also applied on the the content inside the element */
+#two{
+ /* transform: scale(2); double along with width as well as height */
+    transform: scale(0.5, 2); /* half ho jayega div along "X" axis or width v keh sakte hai and double ho jayegaa "Y" axis ke along aur height v keh sakte hai */
+}
+
+/************************************** TRANSFORM : TRANSLATE ***************************/
+#three{
+    transform: translate(100px, 100px); /* translate matlab shift in 'X' as well as 'Y' Direction like shifting in Signals and system matlab ab iske baad se start hogaa */
+}
+
+/************************************** TRANSFORM : SKEW ***************************/
+#four{
+    transform: skew(30deg); /* matlab kheech jana means like Italic */
+}
+
+#five{
+    transform: rotate(30deg) skew(30deg) translateX(100px);
+}
+

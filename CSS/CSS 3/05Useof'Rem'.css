@@ -1,0 +1,14 @@
+/*  Now we understand aabout the "rem"  */
+section{
+    font-size: 15px;  
+}
+
+div{ /* Here is the problem comes as div 1 jo ki sabse outer hai apna parent(section) ke font size ka double lega but here we see yaha 3 consecutive div hai toh next div 2 ka size div 1 ka double 
+    div 3 ka div 2 ke double this causes a major setback also double badhega aur ghatega v */
+    font-size: 2em;
+} 
+
+/* so to tackle this we have introduced another this that is Rem */
+div {
+    font-size: 2rem; /* section ke andar ke saare div ka size same hoga double the parent font-size */
+}

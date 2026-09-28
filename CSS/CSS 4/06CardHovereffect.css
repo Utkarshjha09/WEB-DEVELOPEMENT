@@ -1,0 +1,23 @@
+.card{
+    display: inline-block; /* div ek block element hai usko single line mae laane ke liye but property as a block element jo lagi ho woh waise hie rhe*/
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px; /* Outer div radius but not give round to the image */
+    box-shadow: 2px 2px 8px black;
+    transition-duration: 1s; /* 1sec duration makes it more smooth */
+}
+
+img{ /* Very Very Important */
+    width: 100%;  /* div ke kitne part mai humm image chahte hai like in this case we want in whole part so '100%' now it will fit to respective div jismai woh hai */
+    border-radius: 10px 10px 0 0;
+}
+
+.card:hover{
+    box-shadow: 4px 4px 16px goldenrod; /* hover karne pe golden ho jayega  abb*/
+}
+
+.description{
+padding: 0px 2px ; /*top & bottom | left & right (space between content and border) */ 
+}

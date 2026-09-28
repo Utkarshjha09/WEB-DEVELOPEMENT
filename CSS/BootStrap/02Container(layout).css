@@ -1,0 +1,12 @@
+.container{
+    background-color: yellow;
+}
+.container-lg{
+    background-color: aqua;
+}
+.container-md{
+    background-color: blueviolet;
+}
+.container-fluid{
+    background-color: red;
+}

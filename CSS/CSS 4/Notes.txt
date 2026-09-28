@@ -1,0 +1,54 @@
+COLOR-OPACITY (Alpha Channel)-: 
+    It is represented by "a"
+    background-color: rgba(red, 0, 0, 0.9);  Here "a" ---->  is alpha that tell use the opacity of the colour that is use to set the opacity of the color. 
+    It does not depend on any system can be used in "hex" system also in hex #ffa511ff last ff denotes no opacity. 
+    0 ---> gayab 
+    1, ff ---> puraa dikhna
+
+TRANSITION
+    transition-duration: 1s;   
+    we can also write it as "transition" only,  And 1 sec tak he chalegaa 
+    transition-delay: 0.5s;
+    matlab 0.5sec ke baad start hoga hover,active, checked etc jo v lagaye ho uske karne par itne delay ke baad transition start hogaa
+
+TRANSFORM
+    Rotate: isko laga ke hum rotate kar sakte hai both direction mai
+    transform: rotate(45deg);
+
+    Translate: ismai hu "X" & "Y" direction mai shift kar sakte 
+    transform: translate(100px, 100px);
+
+    Scale: iss mai hum current element jispe lagaa rhe hai usko double, half kar sakte along both the direction 
+    transform: scale(2); double along with width as well as height
+    transform: scale(0.5, 2); half ho jayega div along "X" axis or width v keh sakte hai and double ho jayegaa "Y" axis ke along aur height v keh sakte hai
+
+    Skew: matlab kheech jana means like Italic tilt ho jayegaa
+    transform: skew(30deg);
+
+BOX-SHADOW
+    It gives Shadow effect around the box/element.
+    box-shadow: 2px 2px 8px black;   2px --- along 'X' axis 2px --- along 'Y' axis 8px --> blur Radius
+
+BACKGROUND-IMAGE
+    background-image: url("bgimage.jpg");
+    size have three options 
+        'contain' - means puri image repeat hoke background cover karegi
+        'cover' ke case mai crop hoke laag jayegi, 
+        'auto' case mae zoom as well as blur ho jayegaa
+    It cover commonly use hogaa */
+
+POSITION
+    position: static;
+    Humne yaha position 'static' kar di hai iss element ki,  toh position fix ho gayi hai kitna v move karna chaaho no change.
+
+    position: relative; 
+    yaha Position relative kar di matlab apne relative(initial) position se move karegaa like top 100px shift & left 100px shift
+
+    position: absolute;
+    Yaha Position absolute define kar di hai matlab absolute ke case mai block ke liye koi v space create nhi karega toh jo iska parent element hoga uske top left initial hoga wha par block hoga
+    Agar parent usko koi space nhi hai (matlab uspe koi CSS ki property apply nhi hai ) toh page ke top left  position par block jayegaa matlab initial hoga toh waha se shift hoga
+
+    position: fixed;
+    yeh v same positions as a 'absolute' jaisa hie space create karta hai aur element place karta  hai but yeh page pe fix ho jata hai scroll karnepe v fix rehta hai Example we can fix navbar
+    
+

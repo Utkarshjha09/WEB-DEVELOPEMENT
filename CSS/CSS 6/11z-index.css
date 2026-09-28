@@ -1,0 +1,27 @@
+div{
+    height: 150px;
+    width: 150px;
+    border: 2px black solid;
+}
+
+.one{
+    background-color: aqua;
+    position: static; /* yaha z-index kaam nhi karega only work when position:relative then only it works */
+    z-index: 1;
+}
+
+.two{
+    background-color: burlywood;
+    position: relative;
+    bottom: 50px; /* yaha work karega */
+    z-index: 3;
+}
+
+.three{
+    background-color: red;
+    position: relative; /* relative matlab aab shift hogaa jaise yaha bottom se 100px upar jayegaa */
+    bottom: 100px;
+    z-index: -1;
+
+    /* yaha z-index se layer pehle 'three' phir iske upar 'one' ka layer then iske upar 'two' layer */
+}

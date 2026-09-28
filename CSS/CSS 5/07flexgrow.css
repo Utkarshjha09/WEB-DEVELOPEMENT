@@ -1,0 +1,75 @@
+h1{
+    text-align: center;
+}
+
+#Colour1{
+   background-color: #9400d3;
+}
+#Colour2{
+    background-color: #4b0082;
+}
+#Colour3{
+    background-color: #0000ff;
+}
+#Colour4{
+    background-color: #00ff00;
+}
+#Colour5{
+    background-color: #ffff00;
+}
+#Colour6{
+    background-color: #ff7f00;
+}
+#Colour7{
+    background-color: #ff0000;
+}
+
+#container1 div,#container2 div{ /* Container id ke aandar ka div */
+    height: 100px;
+    width: 50px;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+
+/* Ismai flex grow width badhegi as main axis is left to right */
+#container1{    
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* this manage along the main axis */
+    align-content: flex-start;
+}
+
+/* Ismai flex-grow height baadhegi  as main axis is top to bottom */
+#container2{    
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column; /*column/row */
+    justify-content: flex-start; /* this manage along the main axis */
+    align-content: flex-start;
+}
+
+
+#Colour6{ 
+    /* align-self: flex-end; */
+    flex-grow: 1; 
+
+}
+#Colour3{
+    flex-grow: 3;
+    max-width: 400px; /* iska matlaab grow karega but 400px se jaada nhi jayegaa as well as 100px se kam nhi milegiii */
+    min-width: 100px;
+}
+
+/* ab yaha khali space baach rhi hai and that will be divide between blue and orange 3:1 ratio respectively, as it gives the flex ratio but as flex-direction is row 
+then the space milegi horizontally across hogi kyuki main axis from left to right hai
+/* But we can also limit the max as well as min width matlab isse kaam width/height naa mille aur isse jaada width/height na milee.

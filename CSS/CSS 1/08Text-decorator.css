@@ -1,0 +1,27 @@
+/* Here we discuss about  hout to apply & remove underline, overline,line-through */
+
+h1{
+    text-align: center;
+    font-weight:normal ;    /* 400 normal ko hum 400 likh ke v represent kar skte hai
+    The range is lies between 100 - 900     */
+
+    text-decoration:underline ;  /* iska use kareke hum underline kar skte hai kisi vi text ko */
+}
+h2{
+    text-align: right;
+    font-weight: bold;   /* 700 bold ko hum 700 v likh sakte hai */
+    
+    text-decoration: line-through;  /* Use this to cross line in between the text */
+}
+p{
+    text-align: justify;
+    font-weight: 100;   /* we can use values from 100-900 as per our requirement */
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    text-decoration: overline; /* use this to overline any text */
+}
+a{
+    text-decoration: none;   /* iske use se hum underline ko remove karte hai jo anchor tab ke karan aayta hai */
+}   

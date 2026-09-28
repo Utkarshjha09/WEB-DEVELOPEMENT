@@ -1,0 +1,28 @@
+/****************************************                DISPLAY                ***************************************************/
+/* By default heading tags are block element and Span are inline element by using this display property we change it */
+
+h2{
+    display: inline;
+    background-color: pink;
+}
+
+span{
+    display: block;
+    background-color: aqua;
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    background-color: greenyellow;
+    margin: 5px;
+    /* display: inline; */ /* yaha jo applied property thii woh toh block element pe thii jo work nhi karegi toh hume isse inline block mai convert karna padegaa 
+    INLINE BLOCK - means acts as inline but property are applied as block */
+    display: inline-block;
+}
+
+/* If we want to remove / gayab karna any of div, element then */
+#Third{
+    display: none;
+}

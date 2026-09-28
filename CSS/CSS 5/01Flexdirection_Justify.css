@@ -1,0 +1,132 @@
+h1, h2{
+    text-align: center;
+}
+
+#Colour1{
+   background-color: #9400d3;
+}
+#Colour2{
+    background-color: #4b0082;
+}
+#Colour3{
+    background-color: #0000ff;
+}
+#Colour4{
+    background-color: #00ff00;
+}
+#Colour5{
+    background-color: #ffff00;
+}
+#Colour6{
+    background-color: #ff7f00;
+}
+#Colour7{
+    background-color: #ff0000;
+}
+
+#container1 div{ /* Container id ke aandar ka div */
+    height: 100px;
+    width: 300px; /* iska matlab container ke andar ka div ka minimum width, height jitnaa ho utne mae equally distribute hogaa and maan loo row wize hie hai and width 10px hai toh main div mae 10px * 7 div yaani sirf 70px hie legaa remain 
+    width of main #container that is 80% of page - 70px hie legaa aur column wize huaa and max height 300px hai of outermost div and each div has height 100px but this leads to only three inside so yeh apne aap ko automatic reaarange kar degaa */
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+
+/******************************************************* FLEX DIRECTION & Justify Content****************************************************/
+/* flex-direction: column;
+   flex-direction: row;
+   flex-direction: row-reverse;
+   flex-direction: column-reverse; */
+
+/*  justify-content: flex-end;
+    justify-content: end;
+    justify-content: start;
+    justify-content: flex-start;  */
+   
+
+#container1{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;  /*  display flex karne se jo v item main outer container ke bahar jaa rha thaa ab sab ek dusre ko equally arrange karke div ke aandar aa jayegaa */
+    /* By default flex apply karne pe row wize hoti To change*/
+    flex-direction: column; /* ab column wize arrange ho jayegaa */
+}
+
+    #container2{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row-reverse; /* direction iseke according dekhi jaati hai row-reverse matlab "right start hogi and left end " */
+    justify-content: flex-end; /*  matlab end agar left mai hai toh item left mae hogaa */
+}
+
+#container3{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column; /* matlab start top mai and end bottom */
+    justify-content: flex-end; /* end agar bottom mae hai toh end v bottom mai hogaa */
+}
+
+#container4{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column-reverse; /*  column-reverse matlab "bottom start hogi and top end " */
+    justify-content: end; /* matlab end agar top mai hai toh item top mae hogaa */
+}
+
+
+/********************************************************  ANOTHER THREE TYPE OF JUSTIFICATION ******************************************************/
+/* justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly; 
+    This are used to manage the space between the content inside the items/elements */
+
+
+#container5{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; /* space beech mai hogaa side mai nhi */
+}
+
+#container6{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: space-around; /* space beech mai double hoga side mai half*/
+}
+
+#container7{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly; /* equal space distribute hoga beech mai as well as side mai v */
+}

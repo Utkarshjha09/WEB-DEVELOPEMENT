@@ -1,0 +1,26 @@
+We can make better Design -:
+    1. Color Theory
+    2. Topography
+
+  Color Theory-: Use color wheel that thave two variation
+                    1. Subtle color combination (monochromatic)
+                    2. Impactful color (Complementry) 
+  Topography -: same text with different style and color gives different meanings 
+                Basically use of different Font-Family
+                 different Color tells us different meaning.
+
+
+Note-: Preconnect link libraries add karta hai or browser ko batata hai kaha se download karna hai.
+
+
+Font-Family 
+     For getting different font for free visit https://fonts.google.com
+        yaha se preconnect link copy karna hai and paste in html head section then use it.
+        kaise use karna hai website pe de rakha hai.
+
+Icon - Go to "google Icon" or "font Awesome"
+        for Google icon simply visit https://fonts.google.com/icons
+                and get the preconnect link as well as how to use it.
+        for font-Awesome Icon visit https://cdnjs.com/libraries/font-awesome and get the preconnect link add it to head section of html
+                then visit to fontawesome.com and select your icon and copy code and use it.
+

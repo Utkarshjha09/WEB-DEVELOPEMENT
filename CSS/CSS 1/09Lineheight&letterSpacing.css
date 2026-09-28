@@ -1,0 +1,22 @@
+h1{
+    line-height: normal; /* Or we can write 2.5 */
+    letter-spacing: normal; /* Or we can write 10px */
+}
+h2{
+    text-align: right;
+    font-weight: bold; 
+    
+    text-decoration: line-through;  
+}
+p{
+    text-align: justify;
+    font-weight: 100;   
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    text-decoration: overline; 
+}
+a{
+    text-decoration: none;
+}   

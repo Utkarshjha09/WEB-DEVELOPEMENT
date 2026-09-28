@@ -1,0 +1,68 @@
+h1{
+    text-align: center;
+}
+
+#Colour1{
+   background-color: #9400d3;
+}
+#Colour2{
+    background-color: #4b0082;
+}
+#Colour3{
+    background-color: #0000ff;
+}
+#Colour4{
+    background-color: #00ff00;
+}
+#Colour5{
+    background-color: #ffff00;
+}
+#Colour6{
+    background-color: #ff7f00;
+}
+#Colour7{
+    background-color: #ff0000;
+}
+
+/* Ismai flex-basis width badhegi ghategi horizontally as main axis is left to right */
+#container1{    
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* this manage along the main axis */
+    align-content: flex-start;
+}
+
+#container2{    
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column; /*column/row */
+    justify-content: flex-start; /* this manage along the main axis */
+    align-content: flex-start;
+}
+
+/* Ismai flex-grow height baadhegi ghategi as main axis is top to bottom */
+#container1 div,#container2 div{ /* Container id ke aandar ka div */
+    height: 100px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+
+#Colour6{ 
+    /* align-self: flex-end; */
+    flex-basis: 50px; /* Yaha flex-direction row hai toh main axis v left to right hoga agar extra space bachaa hoga to humm colour6 ke 100px initial space mai contribute kar degaa agar flex basics se chota hai toh
+    whi agar flex direction column hai toh height pe apply hoga flex basis */
+}
+#Colour3{
+    flex-basis: 400px;
+}

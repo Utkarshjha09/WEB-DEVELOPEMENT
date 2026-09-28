@@ -1,0 +1,100 @@
+h1{
+    text-align: center;
+}
+
+#Colour1{
+   background-color: #9400d3;
+}
+#Colour2{
+    background-color: #4b0082;
+}
+#Colour3{
+    background-color: #0000ff;
+}
+#Colour4{
+    background-color: #00ff00;
+}
+#Colour5{
+    background-color: #ffff00;
+}
+#Colour6{
+    background-color: #ff7f00;
+}
+#Colour7{
+    background-color: #ff0000;
+}
+
+#container1 div,#container2 div, #container3 div, #container4 div{ /* Container id ke aandar ka div */
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+/*  Align item -: iska hum items ko cross axis ke along manage karne ke liye use karte hai like when the flex-direction is row (Horizontally) it we apply to manage Vertically -Y axis direction mae */
+/**********************************************    align-items: flex-start; **********************************************/
+#container1{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    flex-wrap: wrap;
+    align-items: flex-start; /* issmai start mai ayega cross axis ke across basically top mai */
+}
+
+/**********************************************************        align-items: flex-end;         *******************************************/
+#container2{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    flex-wrap: wrap;
+    align-items: flex-end; /* yaha end mai ayegaa cross axis ke across basically bottom mai */
+}
+
+/**********************************************************          align-items: center         ****************************************************/
+#container3{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    flex-wrap: wrap;
+    align-items: center;  /* ismai center mai aajaye cross axis space manage ho jayega vertically */
+}
+
+/**********************************************************            align-items: baseline;          *********************************************/
+
+#container4 #Colour6{
+    height: 200px;
+    font-size: 3.5em
+}
+#container4 #Colour3{
+    height: 75px;
+}
+#container4{   /* VERY VERY VERY IMPORTANT */
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    flex-wrap: wrap;
+    align-items: baseline;  /* chaahe div different size ka kyu naa ho agar andar content hai toh woh ek line mai aa jayegaa saara content */
+}
+
+

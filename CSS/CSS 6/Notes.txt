@@ -1,0 +1,126 @@
+Grid -: 
+    Iska use hum karte hai jab humko 2-direction mai control kar sakte hai row as well as column wise simultaneously
+    but in case of flex there we can only use it only in one direction row, column, reverse-row, reverse-column.
+    To use this -:
+                  display: grid;
+                  display: grid-inline;
+            
+It has 3 parts -:
+                  Grid-Lines
+                  Grid-Cell
+                  Grid-Track
+
+Grid-Lines -: basically grid matlab lines hota hai jo ki rows and column both mai divide hotaa hai 
+Grid-Cell -: 2 rows and 2 column se jo square form hota hai usko grid-cell kehte hai.
+Grid-Track -: 2 lines ke beech width ko track kehte hai.
+
+Grid-Template-:
+            grid-template-rows: 60px 60px 60px 60px 60px; ----> here it is define for 5 lagataar rows ke liye
+            grid-template-column: 60px 60px 60px 60px; -------> it is here defined for 4 column
+
+grid-template-rows is used to define the tracking size -- in case of this, 2 horizontal lines ke beech ka size define karte hai
+        jitne baar likhenge  utne row ke liye define karegaa 
+
+grid-template-column is used to define the tracking size column wize -- in case of this, 2 vertical lines ke beech ka size define karte hai
+        jitne baar likhenge  utne column ke liye define karegaa
+
+grid-template-rows: repeat(3,1fr); repeat is used to divide the  all the space where 3 is no of rows we required and 1fr means these rows take equal space.
+grid-template-colums: repeat(3,1fr) where 3 is no of columns and 1fr states that it should be divided into equal size
+
+        Method-1
+                grid-template-rows: 60px 60px 60px 60px 60px;
+                grid-template-column: 60px 60px 60px 60px;
+        Method-2
+                grid-template-columns: auto auto auto auto;
+                grid-template-rows: auto auto auto auto;
+        ( Jitni baar auto likhenge utni row ya column ki track size define hoti jayegiii and automatically equal size le lega )
+
+        Method-3
+                grid-template-rows: repeat(3,1fr);
+
+        Method-4
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr; 
+                (it tells 3 rows/column with equal tracking size)
+
+Grid-Gap -:
+        Method-1 
+            row-gap: 10px;
+            column-gap: 10px;
+        
+        Method-2
+            grid-gap: 10px 10px; 
+            first tell about the row gap and second tells about the column gap 
+
+    Note-: If there is Div that is outer inside that there is multiple div agar mai andar ke div ka height and width define naa karu toh yeh div grid-cell ke size ki ho jayegii
+
+Grid-Column & Grid-Rows-:
+        Basically iska use karte hai andar ke cell ko merge from start cell to end cell tak. (Merge cell).
+        Method-1
+                grid-column-start: 1;           grid-row-start: 2;
+                grid-column-end: 3;             grid-row-end: 5;
+        
+        Method-2
+                grid-row: 1/3;
+                grid-column: 2/5;
+
+        Method-3
+                grid-column: 1/span 2;
+                Span number means humko starting line ke baad kitne box tak merge karna hai
+             
+Grid-Property-:
+        items- used for full container that contains item, purre group of item(whole group of item) pe apply ho jayegaa
+        self - iska use individual pe lagaane ke liye hota maan lo koi 
+        justify-:horizontally space manage karna basically andar ke item ko left-right
+        align-: Vertically space manage karna basically andar ke item ko top-bottom
+
+        iske 3 values ho skte end,start, center
+        justify-items: iska use karke outer div that have many div inside isko hum left and right ke around space manage karsakte hai
+        align-items: iska use karke outer div that have many div inside isko hum Top and bottom ke around space manage karsakte hai
+
+        justify-self: iska use karke hum inner div ke around left and right space ko manage kar sakte hai
+        align-self: iska use karke hum inner div ke around top and bottom space ko manage kar skte hai
+
+        place-self - this is used jab humko same set karna ho space ko horizontally as well as vertically also.
+Animation-
+        @keyframes - iska use karte hai hum animation template banane mae then we can use it.
+        Method-1
+                @keyframes NameofAnimation{
+                        from{}
+                        to{}
+                }
+
+                from --> 0% && to --> 100%
+
+        Method-2
+                @keyframes NameOfAnimation{
+                        0%{}
+                        32%{}
+                        65%{}
+                        100%{}
+                }
+Responsive Design
+        @media(condition){
+                h1{}
+                .one{}
+                #item{}
+        }
+        @media(condition 1) and (condition 2){
+
+        }
+
+Condition-:
+        width:
+        height:
+        max-width:
+        min-width:
+        potrait or landscape
+
+z-index-:
+        ek ke upar ek aa jayega toh stach bn jata hai toh hum isko manage kar skte hai kon upar rahegaa
+        For that it should be only works when
+                position: relative; 
+                z-index: ;
+                position relative hoga tabhi apply hogaa z-index apply hogaa
+
+        more greater z-index value that is above all topmost sbse upar

@@ -1,0 +1,26 @@
+/* To Understand this add this css to html file */
+h1{
+    line-height: normal;  
+    letter-spacing: normal; 
+    font-size: 15px; /* It is used to set the size of the Font */
+    font-family: arial; /* Go to https://www.cssfontstack.com/ to know about different font family */
+}
+h2{
+    text-align: right;
+    font-weight: bold; 
+    text-decoration: line-through;
+    font-family: fantasy; /* fantasy mai doa font hai but koi v le sakta hai browser Copperplate, Papyrus */ 
+}
+p{
+    text-align: justify;
+    font-weight: 100;   
+    font-family:Avant Garde,Candara, Geneva, Impact , Lucida Console; /* here we use multiple family of font whatever browser supports it just use it */
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    text-decoration: overline; 
+}
+a{
+    text-decoration: none;
+}   

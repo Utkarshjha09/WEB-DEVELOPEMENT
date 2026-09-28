@@ -1,0 +1,25 @@
+*{
+    font-family: 'Courier New';
+}
+h1{
+ color: #1b74e4;
+}
+
+/* #loginbtn, #Registerbtn{
+    background-color: aqua;    Using Id selecter
+    color: black;
+} */
+
+.button{
+    background-color: aqua;         /*Using Class selector */
+    color: black;           
+}
+#Searchbutton{
+    background-color: black;
+    color: white;
+}
+label{
+    text-align: left;
+}
+
+

@@ -1,0 +1,60 @@
+display:flex; iska use karte hai so that content apne aap ko adjust karke within the container rakhe.
+flex-direction-:
+    Content humesa main axis ke order mai hoti hai
+    Main axis && Cross axis
+        isko decide kiya jata hai flex-direction se-:
+            if the flex-direction : row then the main axis is "left to right" and Cross axis is "Top to bottom "
+
+            if the flex-direction : column then the main axis is "Top to Bottom" and Cross axis is "Left to Right"
+            if the flex-direction: row-reverse then the main axis is "Right to left" and the Cross axis is "Top to bottom"
+            if the flex-direction: column-reverse then the main axis is "bottom to top" and the Cross axis is "left to right"
+
+flex-wrap -: iska use karte hai ki apne aap ko adjust kare but itna v naa kare chota ki ek row/column mai hie reh jaye 
+    It has 3 values
+        1. nowrap-: is mai normal ek row/column mai hie reh jayegaa 
+        2. wrap-: issmai warp hoga bahar ke container ke hisaab se example baahr ka width 600px and inner div have 300px and flex direction is row then 2 div in a row then in next line.
+        3. wrap-reverse-: same as wrap but in reverse order
+
+Note-: agar koi property hume main axis pe apply karni hai toh "Justify" use karenge and Cross axis pe apply karni hai toh "align" use kaarenge.
+
+        Main Axis                                       Cross Axis
+1. Justify-content                                 1. Align-content
+2. Justify-item                                    2. Align-item
+3. Justify-self                                    3. Align-self
+
+
+Justify content / Align content/ Align-item/ justify-item/ justify-self/ align-self-: sab mai yahi value put karte hai
+all this function are apply along the axis we are using  
+1. flex-start ( agar left to right hai axis then left mai hoga item kyu ki waha se start ho rha hai)
+2. flex-end   ( end mai hoga that is right  )
+3. center     ( center mai hoga )
+4. space-between   ( space centent ke beech mai hoga equally distributed )
+5. space-around    ( space chaaro traf se hogaa)
+6. space-evenly    ( space equally distribute hoga)
+7. baseline        ( sare content ek level pe aa jayegaa )
+8. start           
+9. end
+
+justify content/ Align content -: use to control/distribute the space betwwen them row/column
+justify-item/align-item -:  it is use to control the items inside lineup indside individual row or column box
+justify-self/align-self-: iska use hum individual item pe karte hai and priority order is this justify-self/align-self >>>>>>>>> justify-item/align-item
+
+Align self have >>>>>>>>>> (priority order than ) align-item
+
+Flex-Sizing
+     Flex-basis -: This use in case when there is extra space remaining so with the help of this we can give initial space to any of items inside it.
+            agar maan lo flex direction column toh baacha hua space height ke across flex-basis set hogi and agar flex direction row mai hai toh width ke across baachi set hogi.
+            basically humne kisi ki flex basis 400px de diyaa toh agar extra space baach toh woh item khud ko 400px tak badha ke le jayegaaa height/row ke according jo v main axis set hogaa.
+                Ismai flex-basis width badhegi ghategi horizontally as main axis is left to right
+
+     Flex-grow-:It tells if there will be remaining extra empty space then how does the size of flex item increases
+                By default flex-grow:1; 1x se grow karta hai and we can change it to 2x,3x,....
+                Ismai flex-grow height baadhegi ghategi as main axis is top to bottom
+                Ismai flex-grow width badhegi ghategi horizontally as main axis is left to right
+
+            Example-: ab yaha khali space baach rhi hai and that will be divide between blue and orange 3:1 ratio respectively, as it gives the flex ratio but as flex-direction is row 
+                      then the space milegi horizontally across hogi kyuki main axis from left to right hai
+                      But we can also limit the max as well as min width/height matlab iss se kaam/jada width/height naa mille aur isse jaada width/height na milee.
+     
+     Flex-shrink-: It tells if there will be less space than required then how does the size of flex item decreases
+                   By default flex-shrink:1; 1x se chotaa karta hai and we can change it to 2x,3x,.... 
