@@ -1,0 +1,118 @@
+BOOTSTRAP
+    bootstrap is like library jisme chheze pehle se define hoti hai hum bass uske keywords ko use karte hai like class ke ko different keywords dete hi different-different property
+    apply ho jaati hai kyuki saari property class ke saath defined hai bootstrap mai
+
+NOTES-: Kuch v apply karna hoto hum ussko class ke saath likhte 
+            example-:  class="btn" (yeh simple css hai)
+                        Css mai humm class ka name kuch v de skte hai but bootstrap mai class ka name "btn' denge tabhi propery apply hogii 
+        To use Bootstrap we need to use this link in the <head>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" >
+
+/**************************            BUTTON               ********************/
+    Agar hume koi property apply karni like color to humko "btn" repeat karna hoga as "btn-Danger" : btn shows the button and Danger tell red color already define in bootstrap.
+    So it goes like -: class="btn btn-danger" (yha bootstrap apply hua hai) 
+                       class="btn btn-danger"        Here it is by bootstrap we dont have any need to define css
+                       class="btn btn-primary"
+                       class="btn btn-secondary"
+                       class="btn btn-success"
+                       class="btn btn-danger"
+                       class="btn btn-warning"
+                       class="btn btn-info"
+                       class="btn btn-light"
+                       class="btn btn-dark"
+                       class="btn btn-link"
+    to create a disable button - use "disable" keyword in class
+                       class="btn btn-success disabled"
+    Generate Outline buttons- use "outline" keyword in class.
+                       class="btn btn-outline-primary"
+                       class="btn btn-outline-secondary"
+                       class="btn btn-outline-success"
+                       class="btn btn-outline-danger"
+                       class="btn btn-outline-warning"
+                       class="btn btn-outline-info"
+                       class="btn btn-outline-light"
+                       class="btn btn-outline-dark"  
+    Agar button ka shape rounded chaiye toh jus include this "rounded-pill" in class as 
+                       class="btn rounded-pill btn-warning"                       
+
+/*************************************                BUTTON & GROUP BUTTON                     *************************************/
+Single single button define Huaa hai 
+            <div class="container">
+                    <button class="btn btn-success">Left</button>
+                    <button class="btn btn-success">Middle</button>
+                    <button class="btn btn-success">Right</button>
+            </div>
+
+Yaha group mae Button define Huaa hai 
+            <div class="btn-group" >
+                    <button class="btn btn-success">Left</button>
+                    <button class="btn btn-success">Middle</button>
+                    <button class="btn btn-success">Right</button>
+            </div>
+ we can also add "Outline" in betwwen the class for making it in new design 
+            class="btn btn-outline-success (like thus)
+
+
+In Case of Responsive design we uses @media, But in BOOTSTRAP we define class with name of that (class ke saath hie div ko class container as well as screen size de diye hai)
+        1. class="container-lg" -: Yaha jaise class "container-lg" rakha hai toh isse yeh 992px se nichhe wale device screen pe hie 100% width accquire karegaa
+        2. class="container-md" -: Yaha jaise class "container-md" rakha hai toh isse yeh har 768px se nicche wale device screen pe hie full width legaa
+        3. class="container-fluid" -: Yaha jaise class "container-fluid" rakha hai toh isse yeh har device screen pe hie full width legaa
+         Or so on..... Types
+
+/******************************* BADGE ***********************************/
+Badge banane ke liye ek span lena hota hai and class="badge" se define karna hota hai
+                                    <span class="badge bg-secondary">new</span>
+Agar badge ka background color set karna hai toh hum iska use karenge "bg-secondary" where secondary is color
+                                                class="badge bg-secondary"
+                        
+Agar Humko Inbox button banana ho and with 99+ notification badge hona chahiye the we use this 
+        <button class="btn btn-primary position-relative">Inbox<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">99+</span>
+    This tell we can also define all properties in the class like here we define-:
+                                                                                  position-absolute
+                                                                                  top-0
+                                                                                  start-100
+                                                                                  translate-middle
+                                                                                  badge
+                                                                                  rounded-pill
+                                                                                  bg-danger
+    
+/***********************            ALERT              ***********************/
+ For defining alert we uses class="alert alert-danger"
+
+
+/***********************            NAVBAR              ******************************/
+
+ For Navbar-:         class="navbar-brand"
+ For Navbartoggler-:  class="navbar-toggler"
+ For Navbar-icon-:    class="class="navbar-toggler-icon"
+
+/***********************            CARD              ******************************/
+
+ For card -:          class="card"
+ For card-body -:     class="card-body
+ For Title -:         class="card-title"
+ For the Text inside the card   class="card-text"
+
+/***********************            GRID SYSTEM              ******************************/
+
+ For applyig grid system apply class="row"
+        Basically a row is divide in to 12 equal columns
+
+        class="col-3 bg-success"
+        class="col-2 bg-danger"
+        class="col-5 bg-success"
+
+Now if we want agar "X" screen size se jaada ho toh normal se diyee gye screen size mai divide ho jayee 
+        Ex:- For md:-
+             class="col-md-2 bg-success"
+             class="col-md-6 bg-danger">
+             class="col-md-4 bg-success"
+
+        For xl:-
+             class="col-xl-3 bg-success
+             class="col-xl-4 bg-danger"
+             class="col-xl-5 bg-success"
+
+Grid (Vertical Alignment) / align-item-center
+             <div class="row align-items-center">
+             For managing both vertical as well as horizontal.

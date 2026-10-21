@@ -13,6 +13,7 @@
         column B -5 ka jagah le at last column C-2 ka toh issi ratio mai divide hogaa. <br><b>Note** -:</b> divide total no of 12-column mai hie hogaa. </p>
         <p> And hum isko <b>responsive bhi bna skte hai hai by using Grid-option</b> for different <b>Screen-size</b></p>
     <div class="container">
+        <H2>Grid System</H2>
         <div class="row">
             <div class="col bg-danger">One</div>
             <div class="col bg-success">Two</div>
@@ -25,10 +26,52 @@
         </div>
         <br>
         <div class="row">
-            <div class="col-3 bg-success">Three</div> <!-- Yeh 12 mai se 3 column ka jagah legaa -->
-            <div class="col-2 bg-danger">Four</div> <!-- Yeh 12 mai se 2 ka jagah legaa -->
-            <div class="col-5 bg-success">Five</div> <!-- yeh 12 mai se 5 ka jagah legaa and remaining 2 jagah empty reh jayegaa  --> 
+            <div class="col-3 bg-success">Six</div> <!-- Yeh 12 mai se 3 column ka jagah legaa -->
+            <div class="col-2 bg-danger">Seven</div> <!-- Yeh 12 mai se 2 ka jagah legaa -->
+            <div class="col-5 bg-success">Eight</div> <!-- yeh 12 mai se 5 ka jagah legaa and remaining 2 jagah empty reh jayegaa  --> 
         </div>
+        <br>
+        <div class="row">
+            <div class="col-md-2 bg-success">Three</div>
+            <div class="col-md-6 bg-danger">Four</div>
+            <div class="col-md-4 bg-success">Five</div>
+        </div>
+        <br>
+        <div>
+            <div class="row">
+            <div class="col-xl-3 bg-success">Six</div> <!-- matlab screen size 1200px se jaise hie jada hoga toh 3,4,5 mai distribute ho jaye ga aur jaise hie 1200px ke andar ayegaa to equal colums mai ho jayegaa -->
+            <div class="col-xl-4 bg-danger">Seven</div>
+            <div class="col-xl-5 bg-success">Eight</div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-2 col-xl-4 bg-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, culpa, necessitatibus repellendus, tenetur quia sed amet eaque praesentium fugiat ex ipsum ab adipisci laborum eligendi ipsam facere earum molestias blanditiis.</div>
+            <div class="col-md-6 col-xl-4 bg-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolores odit laborum explicabo impedit iste voluptatem, omnis quo quia sapiente nemo quaerat optio enim dignissimos, non quod totam adipisci similique?</div>
+            <div class="col-md-4 col-xl-4 bg-warning">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, tempore? Nemo dolorem commodi consectetur rem nesciunt officia, tenetur veritatis neque eveniet corrupti. Eveniet animi excepturi maiores laboriosam pariatur doloremque! Aliquid.</div>           
+        </div>
+<br>
+        <H2>Grid (Vertical Alignment) / align-item-center</H2>
+            <div class="row align-items-center">
+            <div class="col bg-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, culpa, necessitatibus repellendus, tenetur quia sed amet eaque praesentium fugiat ex ipsum ab adipisci laborum eligendi ipsam facere earum molestias blanditiis.</div>
+            <div class="col bg-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolores odit laborum explicabo impedit iste voluptatem, omnis quo quia sapiente nemo quaerat optio enim dignissimos, non quod totam adipisci similique?</div>
+            <div class="col bg-warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, repudiandae necessitatibus. Libero aspernatur iure id numquam nobis atque in voluptates, rerum voluptatum unde velit. Ad, dolorem ipsam. Quos, magnam ab.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, tempore? Nemo dolorem commodi consectetur rem nesciunt officia, tenetur veritatis neque eveniet corrupti. Eveniet animi excepturi maiores laboriosam pariatur doloremque! Aliquid.</div>     
+            <div class="col bg-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ad amet blanditiis officiis recusandae expedita quasi fugiat voluptates similique delectus quae non placeat exercitationem, rem explicabo natus illum unde possimus.</div>      
+        </div>
+        <H2>Grid (Vertical Alignment) / align-item-start/end</H2>
+            <div class="row align-items-start">
+            <div class="col bg-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, culpa, necessitatibus repellendus, tenetur quia sed amet eaque praesentium fugiat ex ipsum ab adipisci laborum eligendi ipsam facere earum molestias blanditiis.</div>
+            <div class="col bg-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolores odit laborum explicabo impedit iste voluptatem, omnis quo quia sapiente nemo quaerat optio enim dignissimos, non quod totam adipisci similique?</div>
+            <div class="col bg-warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, repudiandae necessitatibus. Libero aspernatur iure id numquam nobis atque in voluptates, rerum voluptatum unde velit. Ad, dolorem ipsam. Quos, magnam ab.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, tempore? Nemo dolorem commodi consectetur rem nesciunt officia, tenetur veritatis neque eveniet corrupti. Eveniet animi excepturi maiores laboriosam pariatur doloremque! Aliquid.</div>     
+            <div class="col bg-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ad amet blanditiis officiis recusandae expedita quasi fugiat voluptates similique delectus quae non placeat exercitationem, rem explicabo natus illum unde possimus.</div>      
+        </div>
+            <H2>Grid (Vertical Alignment) of individual item / align-self-start/end/center</H2>
+            <div class="row align-items-start">
+            <div class="col bg-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, culpa, necessitatibus repellendus, tenetur quia sed amet eaque praesentium fugiat ex ipsum ab adipisci laborum eligendi ipsam facere earum molestias blanditiis.</div>
+            <div class="col bg-danger align-self-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolores odit laborum explicabo impedit iste voluptatem, omnis quo quia sapiente nemo quaerat optio enim dignissimos, non quod totam adipisci similique?</div>
+            <div class="col bg-warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, repudiandae necessitatibus. Libero aspernatur iure id numquam nobis atque in voluptates, rerum voluptatum unde velit. Ad, dolorem ipsam. Quos, magnam ab.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, tempore? Nemo dolorem commodi consectetur rem nesciunt officia, tenetur veritatis neque eveniet corrupti. Eveniet animi excepturi maiores laboriosam pariatur doloremque! Aliquid.</div>     
+            <div class="col bg-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ad amet blanditiis officiis recusandae expedita quasi fugiat voluptates similique delectus quae non placeat exercitationem, rem explicabo natus illum unde possimus.</div>      
+        </div>
+
     </div>
 </body>
 </html>
